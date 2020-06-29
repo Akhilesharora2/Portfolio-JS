@@ -7,9 +7,13 @@ router.get('/', function (req, res) {
     res.render('index', { title: 'Express' });
 });
 
+router.get('/akhil', function (req, res) {
+    res.render('about', { title: 'Express' });
+});
+
 app.get('/contact', function (req, res) {
     console.log("woring");
-   // res.send('contact');
+    res.send('contact');
 });
 
 //app.get('/project', function (req, res) {
