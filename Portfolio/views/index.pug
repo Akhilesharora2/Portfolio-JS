@@ -1,6 +1,13 @@
 extends layout
 
 block content
+
   h1= title
   p Welcome to #{title}
   p Initial commit to github!!
+  a(href= '/contact')
+    |Contact
+
+
+  //include partials/footer.pug
+  //+footer()
