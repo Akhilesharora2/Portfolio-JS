@@ -1,13 +1,26 @@
 extends layout
 
+
 block content
+  // File Name: index.pug
+  //Author Name: Akhilesh Arora
+  //File Desc.: Index or home page having my name, title and skill set.
 
-  h1= title
-  p Welcome to #{title}
-  p Initial commit to github!!
-  a(href= '/contact')
-    |Contact
+ 
+  div#article1
+        div.container
+            div.rowName
+                h1(strong)  Akhilesh Arora
+            div.rowName
+                h2  Full Stack Developer  
+            //this row will be changed automatically using js.
+            div.rowName.mt-md-3
+                h2#skills  Skill set
 
-
+  //a(class="twitter-timeline" href="https://twitter.com/georgiancollege?ref_src=twsrc%5Etfw") Tweets by georgiancollege
+  //script(async src="https://platform.twitter.com/widgets.js" charset="utf-8")
+  //reference: https://publish.twitter.com/?query=https%3A%2F%2Ftwitter.com%2Fgeorgiancollege&widget=Timeline
+  a(class="twitter-timeline" data-lang="en" data-width="220" data-height="510" data-theme="dark" href="https://twitter.com/georgiancollege?ref_src=twsrc%5Etfw") Tweets by georgiancollege
+  script(async src="https://platform.twitter.com/widgets.js" charset="utf-8")
   include partials/footer.pug
   +footer()

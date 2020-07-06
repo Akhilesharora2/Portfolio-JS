@@ -2,7 +2,75 @@ extends layout
 
 block content
 
+  // File Name: about.pug
+  //Author Name: Akhilesh Arora
+  //File Desc.: This file shows my Education, certificates and work experience.
+
+  div(class="container-fluid")
+
+  div(class="row")
+    div(class="col-md-12 jumbotron jumbotron-fluid text-center")
+      h2#about_head A Quick Overview Of My Portfolio.
 
 
+  div(class="container mb-5")
+  div(class="row")
+    div(class="col-md-4 col-sm-12 mt-1 cards")
+      h2 Education
+      hr
+      h4 Computer Programmer Analyst
+      h6 Georgian College, Barrie ON(Canada).
+      p(class="ml-5") May2019~Present
+      ol
+        li Course includes various programming languages. Ex: php, .Net using C#, IOT etc.
+        li Networking essentials.
+        li 3 times in a row Dean's List student.
+     
+      h4 High School
+      h6 Ajanta Senior Secodary School, Amritsar Punjab(INDIA).
+      p(class="ml-5") Apr2016~Apr2018
+
+      ol
+        li Non-Medical(Science) Student.
+        li 1st position in school.
+        li 3rd in overall Ajanta interhouse taekwondo tournament.
+     
+    div(class="col-md-4 col-sm-12  mt-1 cards")
+      h2 Certificates
+      hr
+      h4 Foundation Program in Full Stack Software Engineering
+      h6 NIIT, Amritsar(INDIA).
+      p(class="ml-5") Nov 2018
+      ol
+        li C++
+        li Data Structures
+        li Java
+      h4 Professional Program in Full Stack Software Engineering.
+      h6 NIIT, Amritsar(INDIA).
+      p(class="ml-5") Apr 2019
+      ol
+        li HTML 5, CSS 3, JS, JQuery
+        li JSP, Servlets
+        li SQL
+
+    div(class="col-md-4 col-sm-12 mt-1 cards")
+      h2 Work Experience
+      hr
+      h4 Orientation Team
+      h6 Georgian College, Barrie ON.
+      p(class="ml-5") Aug 2019~Sept 2019
+      ol
+        li Campus tour to new students coming in Georgian College.
+        li Help, guide and answer to students about their questions regarding College.
+
+      h4 Crew Member
+      h6 Mcdonald's at dunlop st., Barrie ON.
+      p(class="ml-5") Nov. 2019~present
+      ol
+        li Team Work.
+        li Confident communication skills.
+        li Time Management.
+
+    
   include partials/footer.pug
   +footer()

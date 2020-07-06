@@ -22,11 +22,17 @@ router.get('/project', function (req, res) {
 router.get('/contact', function (req, res) {
     res.render('contact', { title: 'Express' });
 });
-//app.get('/contact', function (req, res) {
-//    console.log("woring");
+
+//app.get('/', function (req, res) {
+//    res.end('hey There!');
+//});
+//app.get('/contact', (req, res ,next) => {
+//    console.log("working");
 //    res.render('contact', { title: 'Express' });
 //});
-
+//app.listen(1337, function () {
+//    console.log('I/M Listening......');
+//})
 //app.get('/project', function (req, res) {
 //    res.render('project', { name: 'akhil' });
 //});

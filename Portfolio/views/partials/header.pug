@@ -1,12 +1,22 @@
-//doctype html
-//html
- // head
- //   title
-  //body
+// File Name: header.pug
+//Author Name: Akhilesh Arora
+//File Desc.: Header file having links to Font awesome icons, bootstrap and parallax effect.
 
 mixin head(title)
  head 
    meta(charset='UTF-8')
-   title = title
+   //title = title
 
+
+   // google fonts 
+   link(href="https://fonts.googleapis.com/css?family=Allura|Great+Vibes|Sacramento&display=swap" rel="stylesheet")
+
+   // Fant awesome 
+   link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+
+   // Parallax effect 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+   <script src="./parallax.js-1.5.0/parallax.min.js"></script>
+
+   //Bootstrap
    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous")

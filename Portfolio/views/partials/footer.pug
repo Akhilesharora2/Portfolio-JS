@@ -1,13 +1,31 @@
-//doctype html
-//html
- // head
-  //  title
- // body
+// File Name: footer.pug
+//Author Name: Akhilesh Arora
+//File Desc.: This is basically a footer for every page in out portfolio website. Having some links to my profile on different platforms.
 
 mixin footer(footer)
 
-   
+    //Script links of bootstrap 
     hr
     script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous")
     script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous")
     script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous")
+    
+    
+    .article6
+        //a(href="#toTop", class="fa fa-arrow-up", aria-hidden="true")
+        
+        //facebook icon and link to my profile
+        - const myStyle = {"color":"blue", "title":"Facebook" ,"target":"_blank"}        
+        a(href="https://www.facebook.com/profile.php?id=100006241156903" style=myStyle class="fa fa-facebook-square mx-1 mt-5")  
+        //github icon with link to my profile
+        - const myStyle2 = {"color":"black" ,"title":"Github" ,"target":"_blank"}
+        a(href="https://github.com/Akhilesharora2?tab=repositories" style=myStyle2 class="fa fa-github-square mx-1")
+        //instragram icon with link to my profile
+        - const myStyle3 = {"color":"orange" ,"title":"Instagram" ,"target":"_blank"}
+        a(href="https://www.instagram.com/akhilesharora/" style=myStyle3 class="fa fa-instagram mx-1")
+        //Gmail icon with link to my profile
+        - const myStyle4 = {"color":"red" ,"title":"Gmail" ,"target":"_blank"}
+        a(href="mailto:akhilesharora002@gmail.com" style=myStyle4 class="fa fa-envelope mx-1")
+        //Linked in icon with link to my profile
+        - const myStyle5 = {"color":"steelblue" ,"title":"LinkedIn" ,"target":"_blank"}
+        a(href="https://linkedin.com/in/akhilesh-arora-64b07217b" style=myStyle5 class="fa fa-linkedin mx-1")

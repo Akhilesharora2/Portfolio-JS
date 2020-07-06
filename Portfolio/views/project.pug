@@ -2,8 +2,50 @@ extends layout
 
 block content
 
+    // File Name: project.pug
+    //Author Name: Akhilesh Arora
+    //File Desc.: This files shows title and description of my all projects.
+
+    - const myStyle01 = {"width": "75%", "height":"40vh" , "position":"fixed" , "margin":"20px 10%"}
+    img(src='../images/projects.jpg' alt="Projects Image" style=myStyle01)
+    div.container#article4
+
+        div.row
+          div(class = "col-lg-5 col-sm-12 col-md-6 project") 
+            h4 Barrie Groceshippers 
+            hr
+            h6 A online grocery shopping website created using php.  
+            p Dec2019
+
+          div(class="col-lg-5 col-sm-12 col-md-6 project")
+              h4 Deals On Deals
+              hr
+              h6 A simple front end website on online shopping using HTML,CSS,JS.
+              p Aug2019
+
+          div(class="col-lg-5 col-sm-12 col-md-6 project")
+              h4 Ease My Car
+              hr 
+              h6 An IOT project created using Arduino Leonardo. It makes car automatic by automaticaly changing intensity of headLight, managing internal car temp., stereo and automaticaly sends data online.
+              p Aug2019
+              
+          div(class="col-lg-5 col-sm-12 col-md-6 project")
+              h4 Medpoint
+              hr
+              h6 A website on Amritsar Hospitals and doctors showing list of available healt care resurces in Amritsar,INDIA.
+              p Apr2019
+
+          div(class="col-lg-5 col-sm-12 col-md-6 project")
+              h4 Sudent Management System
+              hr
+              h6 A CLI software which manages students data according to their student id, you can easily modify delete and add new record.
+              p Nov2018
+          div(class="col-lg-5 col-sm-12 col-md-6 project")
+              h4 Tic-Tac-Toe Game.
+              hr
+              h6 A game for two players, X and O, who take turns marking the spaces in a 3 × 3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.
+              p Oct2018
 
 
-
-  include partials/footer.pug
-  +footer()
+    include partials/footer.pug
+    +footer()
